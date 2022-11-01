@@ -1,0 +1,1 @@
+/home/ws/ws_rmrobot/devel/.private/rm_msgs/share/rm_msgs/cmake/rm_msgs-msg-paths.cmake

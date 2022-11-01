@@ -1,0 +1,3 @@
+Symlinking /home/ws/ws_rmrobot/devel/lib/pkgconfig/rm_65_moveit_config.pc
+Symlinking /home/ws/ws_rmrobot/devel/share/rm_65_moveit_config/cmake/rm_65_moveit_configConfig.cmake
+Symlinking /home/ws/ws_rmrobot/devel/share/rm_65_moveit_config/cmake/rm_65_moveit_configConfig-version.cmake

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ws/ws_rmrobot/devel/.private/rm_65_moveit_config/setup.sh
