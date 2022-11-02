@@ -276,7 +276,7 @@ bool startMulitiDragTeach = false;
 float min_interval = 0.02;  //透传周期,单位:秒
 
 int Arm_Socket;                //机械臂网络通信套接字
-const char *Arm_IP = "192.168.1.18";   //机械臂IP地址
+const char *Arm_IP = "192.168.43.213";   //机械臂IP地址
 int Arm_Port = 8080;              //机械臂端口地址
 std::mutex send_mutex;
 

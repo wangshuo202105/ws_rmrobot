@@ -1,22 +1,22 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e41c4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e41c4.dir/build.make CMakeFiles/cmTC_e41c4.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1f12c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1f12c.dir/build.make CMakeFiles/cmTC_1f12c.dir/build
 make[1]: Entering directory '/home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e41c4.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_e41c4.dir/CheckSymbolExists.c.o   -c /home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_e41c4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e41c4.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e41c4.dir/CheckSymbolExists.c.o  -o cmTC_e41c4 
-CMakeFiles/cmTC_e41c4.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_1f12c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1f12c.dir/CheckSymbolExists.c.o   -c /home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1f12c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f12c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1f12c.dir/CheckSymbolExists.c.o  -o cmTC_1f12c 
+CMakeFiles/cmTC_1f12c.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_e41c4.dir/build.make:97: recipe for target 'cmTC_e41c4' failed
-make[1]: *** [cmTC_e41c4] Error 1
+CMakeFiles/cmTC_1f12c.dir/build.make:97: recipe for target 'cmTC_1f12c' failed
+make[1]: *** [cmTC_1f12c] Error 1
 make[1]: Leaving directory '/home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_e41c4/fast' failed
-make: *** [cmTC_e41c4/fast] Error 2
+Makefile:126: recipe for target 'cmTC_1f12c/fast' failed
+make: *** [cmTC_1f12c/fast] Error 2
 
 File /home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,20 +36,20 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1cd4d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1cd4d.dir/build.make CMakeFiles/cmTC_1cd4d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_15c51/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15c51.dir/build.make CMakeFiles/cmTC_15c51.dir/build
 make[1]: Entering directory '/home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1cd4d.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1cd4d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1cd4d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cd4d.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1cd4d.dir/CheckFunctionExists.c.o  -o cmTC_1cd4d -lpthreads 
+Building C object CMakeFiles/cmTC_15c51.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_15c51.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_15c51
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15c51.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_15c51.dir/CheckFunctionExists.c.o  -o cmTC_15c51 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1cd4d.dir/build.make:97: recipe for target 'cmTC_1cd4d' failed
-make[1]: *** [cmTC_1cd4d] Error 1
+CMakeFiles/cmTC_15c51.dir/build.make:97: recipe for target 'cmTC_15c51' failed
+make[1]: *** [cmTC_15c51] Error 1
 make[1]: Leaving directory '/home/ws/ws_rmrobot/build/rm_bringup/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_1cd4d/fast' failed
-make: *** [cmTC_1cd4d/fast] Error 2
+Makefile:126: recipe for target 'cmTC_15c51/fast' failed
+make: *** [cmTC_15c51/fast] Error 2
 
 

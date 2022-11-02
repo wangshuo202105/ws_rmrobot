@@ -1,0 +1,1 @@
+/home/ws/ws_rmrobot/devel/.private/realsense2_camera/share/gennodejs/ros/realsense2_camera/_index.js

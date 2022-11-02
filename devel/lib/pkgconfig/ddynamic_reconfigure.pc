@@ -1,0 +1,1 @@
+/home/ws/ws_rmrobot/devel/.private/ddynamic_reconfigure/lib/pkgconfig/ddynamic_reconfigure.pc

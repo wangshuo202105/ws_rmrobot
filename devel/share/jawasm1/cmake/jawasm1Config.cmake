@@ -1,0 +1,1 @@
+/home/ws/ws_rmrobot/devel/.private/jawasm1/share/jawasm1/cmake/jawasm1Config.cmake
