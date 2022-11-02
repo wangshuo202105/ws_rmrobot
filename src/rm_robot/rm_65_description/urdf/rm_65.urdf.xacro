@@ -53,7 +53,6 @@
     <mu2 value="200000.0"/>
     <kp value="100000000.0"/>
     <kd value="1.0"/>
-    <material>Gazebo/Blue<material/>
   </gazebo>
   
   <joint name="dummy_joint" type="fixed">
@@ -501,7 +500,19 @@
   <!--######################################################################-->
   <!-- gripper -->
   <!-- <xacro:include filename="$(find rm_65_description)/urdf/rm_65.gazebo.xacro"/> -->
-  
+  <xacro:include filename="$(find rm_65_description)/urdf/jawasm1.urdf" />
+  <joint
+    name="joint8"
+    type="fixed">
+    <origin
+      xyz="-0.0125 0 ${0.0535-0.0099185365078758+0.008}"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="plate" />
+    <child
+      link="gripper_base_link" />
+    <dynamics damping="50" friction="1"/>
+  </joint>
 
   <!--######################################################################-->
   <!-- Transmissions for ROS Control -->
@@ -525,7 +536,7 @@
   <xacro:transmission_block joint_name="joint5"/>
   <xacro:transmission_block joint_name="joint6"/>
 
-  <!-- ros_control plugin -->
+  <!-- gazebo controller plugin for arm -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/arm</robotNamespace>
@@ -533,4 +544,7 @@
       <legacyModeNS>true</legacyModeNS>
     </plugin>
   </gazebo>
+
+  <!-- gazebo controller plugin for gripper -->
+
 </robot>
