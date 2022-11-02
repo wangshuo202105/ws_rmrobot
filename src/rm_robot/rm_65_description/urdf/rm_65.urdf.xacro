@@ -431,6 +431,7 @@
   <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+  <!-- plate -->
   <link
     name="plate">
     <inertial>
@@ -486,7 +487,14 @@
   </joint>
 
   <!--######################################################################-->
-  <!-- plate -->
+  <!-- realsense d435 with gazebo simulation    joint8 -->
+  <xacro:include filename="$(find realsense_ros_gazebo)/xacro/depthcam.xacro"/>
+
+  <xacro:realsense_d435 sensor_name="d435" parent_link="plate" rate="10">
+    <origin rpy="0 -1.5708 3.1416" xyz="0.08 0 0.0185"/>
+  </xacro:realsense_d435>
+  
+  <!--
   <xacro:arg name="use_nominal_extrinsics" default="false"/>
   <xacro:arg name="add_plug" default="false" />
   <xacro:arg name="use_mesh" default="true" />
@@ -494,29 +502,31 @@
 
   <xacro:sensor_d435 parent="plate" use_nominal_extrinsics="$(arg use_nominal_extrinsics)" add_plug="$(arg add_plug)" use_mesh="$(arg use_mesh)">
     <origin xyz="0.08 0 0.0185" rpy="0 -1.5708 3.1416"/>
-    <!-- <origin xyz="0.0925 0 0.008" rpy="0 -1.5708 0"/> -->
+    <origin xyz="0.0925 0 0.008" rpy="0 -1.5708 0"/>
   </xacro:sensor_d435>
+  -->
   
   <!--######################################################################-->
   <!-- gripper -->
   <!-- <xacro:include filename="$(find rm_65_description)/urdf/rm_65.gazebo.xacro"/> -->
-  <xacro:include filename="$(find rm_65_description)/urdf/jawasm1.urdf" />
+  <xacro:include filename="$(find rm_65_description)/urdf/jawasm1.urdf.xacro" />
+
   <joint
-    name="joint8"
+    name="joint9"
     type="fixed">
     <origin
-      xyz="-0.0125 0 ${0.0535-0.0099185365078758+0.008}"
+      xyz="-0.0125 0 0.0516"
       rpy="0 -1.5708 0" />
     <parent
       link="plate" />
     <child
       link="gripper_base_link" />
-    <dynamics damping="50" friction="1"/>
+    <dynamics damping="50" friction="1" />
   </joint>
 
   <!--######################################################################-->
   <!-- Transmissions for ROS Control -->
-  <xacro:macro name="transmission_block" params="joint_name">
+  <xacro:macro name="transmission_block" params="joint_name" >
     <transmission name="tran1">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="${joint_name}">
@@ -536,10 +546,15 @@
   <xacro:transmission_block joint_name="joint5"/>
   <xacro:transmission_block joint_name="joint6"/>
 
+  <xacro:transmission_block joint_name="gripper_Link1"/>
+  <xacro:transmission_block joint_name="gripper_Link2"/>
+  <xacro:transmission_block joint_name="gripper_Link11"/>
+  <xacro:transmission_block joint_name="gripper_Link22"/>
+
   <!-- gazebo controller plugin for arm -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/arm</robotNamespace>
+      <robotNamespace>/</robotNamespace>
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
       <legacyModeNS>true</legacyModeNS>
     </plugin>

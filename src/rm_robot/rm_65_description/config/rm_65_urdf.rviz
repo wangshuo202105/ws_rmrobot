@@ -99,15 +99,47 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        camera_bottom_screw_frame:
+        d435_bottom_screw_frame:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        camera_link:
+        d435_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        d435_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        d435_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        d435_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        d435_left_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        d435_left_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        d435_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        d435_right_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        d435_right_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         dummy:
           Alpha: 1
           Show Axes: false
@@ -167,9 +199,25 @@ Visualization Manager:
           Value: false
         base_link:
           Value: true
-        camera_bottom_screw_frame:
+        d435_bottom_screw_frame:
+          Value: true
+        d435_color_frame:
           Value: false
-        camera_link:
+        d435_color_optical_frame:
+          Value: false
+        d435_depth_frame:
+          Value: false
+        d435_depth_optical_frame:
+          Value: false
+        d435_left_ir_frame:
+          Value: false
+        d435_left_ir_optical_frame:
+          Value: false
+        d435_link:
+          Value: false
+        d435_right_ir_frame:
+          Value: false
+        d435_right_ir_optical_frame:
           Value: false
         dummy:
           Value: true
@@ -200,9 +248,6 @@ Visualization Manager:
                     Link5:
                       Link6:
                         plate:
-                          camera_bottom_screw_frame:
-                            camera_link:
-                              {}
                           gripper_base_link:
                             gripper_Link1:
                               gripper_Link11:
@@ -210,6 +255,20 @@ Visualization Manager:
                             gripper_Link2:
                               gripper_Link22:
                                 {}
+            d435_bottom_screw_frame:
+              d435_link:
+                d435_depth_frame:
+                  d435_color_frame:
+                    d435_color_optical_frame:
+                      {}
+                  d435_depth_optical_frame:
+                    {}
+                  d435_left_ir_frame:
+                    d435_left_ir_optical_frame:
+                      {}
+                  d435_right_ir_frame:
+                    d435_right_ir_optical_frame:
+                      {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -240,25 +299,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.9034604430198669
+      Distance: 1.3505566120147705
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0026329183019697666
-        Y: 0.057004865258932114
-        Z: 0.7182918190956116
+        X: 0.9578009247779846
+        Y: 0.1712833046913147
+        Z: 0.8516132831573486
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.7697973251342773
+      Pitch: 0.17479756474494934
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.7453997135162354
+      Yaw: 5.828578472137451
     Saved: ~
 Window Geometry:
   Displays:
