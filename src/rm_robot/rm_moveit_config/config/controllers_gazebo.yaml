@@ -1,0 +1,30 @@
+controller_manager_ns: controller_manager
+controller_list:
+  - name: arm/arm_joint_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+      - joint6
+
+  - name: arm/gripper1_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - gripper_Link1    
+      - gripper_Link11
+
+  - name: arm/gripper2_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - gripper_Link2    
+      - gripper_Link22
+

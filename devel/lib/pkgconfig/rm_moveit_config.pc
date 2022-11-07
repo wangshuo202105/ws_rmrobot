@@ -1,0 +1,1 @@
+/home/ws/ws_rmrobot/devel/.private/rm_moveit_config/lib/pkgconfig/rm_moveit_config.pc

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ws/ws_rmrobot/src/rm_robot/gripper_description
+# Install script for directory: /home/ws/ws_rmrobot/src/rm_robot/gripper
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -140,23 +140,23 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1" TYPE FILE FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1" TYPE FILE FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1/config" TYPE DIRECTORY FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper_description/config/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1/config" TYPE DIRECTORY FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper/config/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1/launch" TYPE DIRECTORY FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper_description/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1/launch" TYPE DIRECTORY FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1/meshes" TYPE DIRECTORY FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper_description/meshes/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1/meshes" TYPE DIRECTORY FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper/meshes/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1/urdf" TYPE DIRECTORY FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper_description/urdf/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/jawasm1/urdf" TYPE DIRECTORY FILES "/home/ws/ws_rmrobot/src/rm_robot/gripper/urdf/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

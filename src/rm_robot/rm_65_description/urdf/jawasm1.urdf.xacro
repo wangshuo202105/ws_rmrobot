@@ -7,7 +7,7 @@
         xyz="0.00339303654278191 -2.1205433560656E-05 -0.0099185365078758"
         rpy="0 0 0" />
       <mass
-        value="0.105853592307918" />
+        value="0.000001" />
       <inertia
         ixx="3.93795927851199E-05"
         ixy="-8.7395226509728E-08"
@@ -40,6 +40,7 @@
       </geometry>
     </collision>
   </link>
+
   <link
     name="gripper_Link1">
     <inertial>
@@ -47,7 +48,7 @@
         xyz="0.0164149658242926 9.75754915755189E-09 0.00898193900447147"
         rpy="0 0 0" />
       <mass
-        value="0.00647716099397792" />
+        value="0.000001" />
       <inertia
         ixx="2.95068972140683E-07"
         ixy="8.63208170411155E-13"
@@ -80,6 +81,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="gripper_Link1"
     type="revolute">
@@ -98,6 +100,7 @@
       effort="1"
       velocity="1" />
   </joint>
+
   <link
     name="gripper_Link11">
     <inertial>
@@ -105,7 +108,7 @@
         xyz="0.011366555972498 0.0118642725662323 0.0060000073930068"
         rpy="0 0 0" />
       <mass
-        value="0.0127543420299361" />
+        value="0.000001" />
       <inertia
         ixx="5.68538478020233E-07"
         ixy="-2.68012262729007E-07"
@@ -138,6 +141,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="gripper_Link11"
     type="revolute">
@@ -156,6 +160,7 @@
       effort="1"
       velocity="1" />
   </joint>
+
   <link
     name="gripper_Link2">
     <inertial>
@@ -163,7 +168,7 @@
         xyz="0.0164149658242926 9.75754915755189E-09 0.00898193900447147"
         rpy="0 0 0" />
       <mass
-        value="0.00647716099397793" />
+        value="0.000001" />
       <inertia
         ixx="2.95068972140683E-07"
         ixy="8.63208169650113E-13"
@@ -214,6 +219,7 @@
       effort="1"
       velocity="1" />
   </joint>
+
   <link
     name="gripper_Link22">
     <inertial>
@@ -221,7 +227,7 @@
         xyz="-0.011366555972498 0.0118642725662323 -0.0060000073930068"
         rpy="0 0 0" />
       <mass
-        value="0.0127543420299362" />
+        value="0.000001" />
       <inertia
         ixx="5.68538478020238E-07"
         ixy="2.6801226272901E-07"

@@ -1,8 +1,9 @@
 <launch>
 
-    <rosparam file="$(find rm_gazebo)/config/rm_65_trajectory_control.yaml" command="load"/>
+    <rosparam file="$(find rm_gazebo)/config/trajectory_control.yaml" command="load"/>
 
+    <!-- load the controllers -->
     <node name="arm_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
-          output="screen" ns="/arm" args="arm_joint_controller"/>
+          output="screen" ns="/arm" args="arm_joint_controller gripper1_controller gripper2_controller"/>
 
 </launch>

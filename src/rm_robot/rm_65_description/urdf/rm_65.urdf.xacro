@@ -3,25 +3,28 @@
 <xacro:include filename="$(find rm_65_description)/urdf/rm_65.transmission.xacro"/>
 <xacro:include filename="$(find rm_65_description)/urdf/rm_65.gazebo.xacro"/>
 
+  
+
   <link name="dummy">
   </link>
+  
 
-  <!--######################################################################-->
+  <!-- base_link -->
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.000433277303987328 -3.54664423471128E-05 0.0599427668933796"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
         value="14" />
       <inertia
-        ixx="0.0017261110801622"
-        ixy="2.52746264980217E-06"
-        ixz="-3.67690303614961E-05"
-        iyy="0.00170987405835604"
-        iyz="1.67996364994424E-06"
-        izz="0.000904023422915791" />
+        ixx="0.01"
+        ixy="0"
+        ixz="0"
+        iyy="0.01"
+        iyz="0"
+        izz="0.01" />
     </inertial>
     <visual>
       <origin
@@ -48,6 +51,7 @@
     </collision>
   </link>
   
+  
   <gazebo reference="base_link">
     <mu1 value="200000.0"/>
     <mu2 value="200000.0"/>
@@ -55,12 +59,14 @@
     <kd value="1.0"/>
   </gazebo>
   
+
   <joint name="dummy_joint" type="fixed">
     <parent link="dummy" />
     <child link="base_link" />
   </joint>
+
   
-  <!--######################################################################-->
+  <!-- Link1 -->
   <link
     name="Link1">
     <inertial>
@@ -121,7 +127,7 @@
 	<dynamics damping="50" friction="1"/>
   </joint>
 
-  <!--######################################################################-->
+  <!-- Link2 -->
   <link
     name="Link2">
     <inertial>
@@ -129,7 +135,7 @@
         xyz="0.152256463426163 4.75383656106654E-07 -0.00620260383607792"
         rpy="0 0 0" />
       <mass
-        value="0.864175046869043" />
+        value="0.013" />
       <inertia
         ixx="0.00089150298478414"
         ixy="-2.23268489334765E-08"
@@ -182,7 +188,7 @@
 	<dynamics damping="50" friction="1"/>
   </joint>
 
-  <!--######################################################################-->
+  <!-- Link3 -->
   <link
     name="Link3">
     <inertial>
@@ -190,7 +196,7 @@
         xyz="5.05312670989961E-06 -0.0595925663694732 0.010569069212336"
         rpy="0 0 0" />
       <mass
-        value="0.289633681624654" />
+        value="0.013" />
       <inertia
         ixx="0.00063737100450158"
         ixy="-7.05261293649751E-08"
@@ -243,7 +249,7 @@
 	<dynamics damping="50" friction="1"/>
   </joint>
 
-  <!--######################################################################-->
+  <!-- Link4 -->
   <link
     name="Link4">
     <inertial>
@@ -251,7 +257,7 @@
         xyz="1.15516617405898E-06 -0.0180424468598241 -0.0215394748352687"
         rpy="0 0 0" />
       <mass
-        value="0.239419768320061" />
+        value="0.013" />
       <inertia
         ixx="0.000285938919722783"
         ixy="3.07101359163101E-09"
@@ -304,7 +310,7 @@
 	<dynamics damping="50" friction="1"/>
   </joint>
 
-  <!--######################################################################-->
+  <!-- Link5 -->
   <link
     name="Link5">
     <inertial>
@@ -312,14 +318,14 @@
         xyz="3.19794786262152E-06 -0.0593808368101458 0.00736804250989326"
         rpy="0 0 0" />
       <mass
-        value="0.218799761431678" />
+        value="0.013" />
       <inertia
-        ixx="0.000350540363914072"
-        ixy="-3.41781619975602E-08"
-        ixz="-1.77056457224373E-08"
-        iyy="0.000104927867487581"
-        iyz="-7.82431228461971E-05"
-        izz="0.000334482418423629" />
+        ixx="0.01"
+        ixy="0"
+        ixz="0"
+        iyy="0.01"
+        iyz="0"
+        izz="0.01" />
     </inertial>
     <visual>
       <origin
@@ -365,7 +371,7 @@
 	<dynamics damping="50" friction="1"/>
   </joint>
 
-  <!--######################################################################-->
+  <!-- Link6 -->
   <link
     name="Link6">
     <inertial>
@@ -373,14 +379,14 @@
         xyz="0.000714234511756999 -0.000396718732824521 -0.0126723660946126"
         rpy="0 0 0" />
       <mass
-        value="0.0649018034311231" />
+        value="0.013" />
       <inertia
-        ixx="2.02766547502765E-05"
-        ixy="-1.32505200276849E-06"
-        ixz="-2.5845091522508E-08"
-        iyy="1.87986725225022E-05"
-        iyz="3.39471452125439E-09"
-        izz="3.17885459163081E-05" />
+        ixx="0.01"
+        ixy="0"
+        ixz="0"
+        iyy="0.01"
+        iyz="0"
+        izz="0.01" />
     </inertial>
     <visual>
       <origin
@@ -424,29 +430,25 @@
       upper="6.28"
       effort="10"
       velocity="3.92" />
-	<dynamics damping="50" friction="1"/>
+    <dynamics damping="50" friction="1"/>
   </joint>
 
-  <!--######################################################################-->
-  <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
-     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
   <!-- plate -->
   <link
     name="plate">
     <inertial>
       <origin
         xyz="0.04582 -2.25539999752262E-10 0.004046"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <mass
-        value="0.051308" />
+        value="0.013" />
       <inertia
-        ixx="1.5915E-05"
-        ixy="2.51849999912398E-14"
-        ixz="1.4307E-07"
-        iyy="8.6534E-05"
-        iyz="4.91220000094025E-12"
-        izz="0.00010189" />
+        ixx="0.01"
+        ixy="0"
+        ixz="0"
+        iyy="0.01"
+        iyz="0"
+        izz="0.01" />
     </inertial>
     <visual>
       <origin
@@ -465,7 +467,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="1.5707963267949 0 0" />
+        rpy="0 0 0" />
       <geometry>
         <mesh
           filename="package://rm_65_description/meshes/plate.STL" />
@@ -485,14 +487,14 @@
       link="plate" />
     <dynamics damping="50" friction="1"/>
   </joint>
-
-  <!--######################################################################-->
-  <!-- realsense d435 with gazebo simulation    joint8 -->
+  
+  <!-- realsense d435 with gazebo simulation    joint8
   <xacro:include filename="$(find realsense_ros_gazebo)/xacro/depthcam.xacro"/>
 
   <xacro:realsense_d435 sensor_name="d435" parent_link="plate" rate="10">
     <origin rpy="0 -1.5708 3.1416" xyz="0.08 0 0.0185"/>
   </xacro:realsense_d435>
+  -->
   
   <!--
   <xacro:arg name="use_nominal_extrinsics" default="false"/>
@@ -506,9 +508,7 @@
   </xacro:sensor_d435>
   -->
   
-  <!--######################################################################-->
   <!-- gripper -->
-  <!-- <xacro:include filename="$(find rm_65_description)/urdf/rm_65.gazebo.xacro"/> -->
   <xacro:include filename="$(find rm_65_description)/urdf/jawasm1.urdf.xacro" />
 
   <joint
@@ -524,7 +524,6 @@
     <dynamics damping="50" friction="1" />
   </joint>
 
-  <!--######################################################################-->
   <!-- Transmissions for ROS Control -->
   <xacro:macro name="transmission_block" params="joint_name" >
     <transmission name="tran1">
@@ -545,6 +544,8 @@
   <xacro:transmission_block joint_name="joint4"/>
   <xacro:transmission_block joint_name="joint5"/>
   <xacro:transmission_block joint_name="joint6"/>
+  <xacro:transmission_block joint_name="joint7"/>
+  <xacro:transmission_block joint_name="joint9"/>
 
   <xacro:transmission_block joint_name="gripper_Link1"/>
   <xacro:transmission_block joint_name="gripper_Link2"/>
@@ -554,7 +555,7 @@
   <!-- gazebo controller plugin for arm -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/</robotNamespace>
+      <robotNamespace>/arm</robotNamespace>
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
       <legacyModeNS>true</legacyModeNS>
     </plugin>

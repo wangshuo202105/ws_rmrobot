@@ -1,4 +1,4 @@
-rm_robot/gripper_description
+rm_robot/gripper
 /home/ws/ws_rmrobot/devel/.private/jawasm1/cmake.lock /home/ws/ws_rmrobot/devel/./cmake.lock
 /home/ws/ws_rmrobot/devel/.private/jawasm1/lib/pkgconfig/jawasm1.pc /home/ws/ws_rmrobot/devel/lib/pkgconfig/jawasm1.pc
 /home/ws/ws_rmrobot/devel/.private/jawasm1/share/jawasm1/cmake/jawasm1Config-version.cmake /home/ws/ws_rmrobot/devel/share/jawasm1/cmake/jawasm1Config-version.cmake

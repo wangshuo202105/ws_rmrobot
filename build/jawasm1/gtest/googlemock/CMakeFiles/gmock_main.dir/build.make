@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ws/ws_rmrobot/src/rm_robot/gripper_description
+CMAKE_SOURCE_DIR = /home/ws/ws_rmrobot/src/rm_robot/gripper
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/ws/ws_rmrobot/build/jawasm1
@@ -162,6 +162,6 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 
 gtest/googlemock/CMakeFiles/gmock_main.dir/depend:
-	cd /home/ws/ws_rmrobot/build/jawasm1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ws/ws_rmrobot/src/rm_robot/gripper_description /usr/src/googletest/googlemock /home/ws/ws_rmrobot/build/jawasm1 /home/ws/ws_rmrobot/build/jawasm1/gtest/googlemock /home/ws/ws_rmrobot/build/jawasm1/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ws/ws_rmrobot/build/jawasm1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ws/ws_rmrobot/src/rm_robot/gripper /usr/src/googletest/googlemock /home/ws/ws_rmrobot/build/jawasm1 /home/ws/ws_rmrobot/build/jawasm1/gtest/googlemock /home/ws/ws_rmrobot/build/jawasm1/gtest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 

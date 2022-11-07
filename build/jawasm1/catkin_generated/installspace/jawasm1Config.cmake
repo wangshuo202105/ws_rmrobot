@@ -67,7 +67,7 @@ set(jawasm1_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(jawasm1_SOURCE_PREFIX /home/ws/ws_rmrobot/src/rm_robot/gripper_description)
+  set(jawasm1_SOURCE_PREFIX /home/ws/ws_rmrobot/src/rm_robot/gripper)
   set(jawasm1_DEVEL_PREFIX /home/ws/ws_rmrobot/devel/.private/jawasm1)
   set(jawasm1_INSTALL_PREFIX "")
   set(jawasm1_PREFIX ${jawasm1_DEVEL_PREFIX})

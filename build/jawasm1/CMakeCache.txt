@@ -334,7 +334,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 jawasm1_BINARY_DIR:STATIC=/home/ws/ws_rmrobot/build/jawasm1
 
 //Value Computed by CMake
-jawasm1_SOURCE_DIR:STATIC=/home/ws/ws_rmrobot/src/rm_robot/gripper_description
+jawasm1_SOURCE_DIR:STATIC=/home/ws/ws_rmrobot/src/rm_robot/gripper
 
 //The directory containing a CMake configuration file for roslaunch.
 roslaunch_DIR:PATH=/opt/ros/melodic/share/roslaunch/cmake
@@ -431,7 +431,7 @@ CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/ws/ws_rmrobot/src/rm_robot/gripper_description
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/ws/ws_rmrobot/src/rm_robot/gripper
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
