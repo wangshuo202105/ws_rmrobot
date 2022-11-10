@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/ws/ws_rmrobot/devel/.private/ddynamic_reconfigure:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/ws/ws_rmrobot/devel/.private/ddynamic_reconfigure/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/ws/ws_rmrobot/devel/.private/ddynamic_reconfigure/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/ws/ws_rmrobot/build/ddynamic_reconfigure'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/ws/ws_rmrobot/devel/.private/ddynamic_reconfigure/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/ws/ws_rmrobot/src/ddynamic_reconfigure:$ROS_PACKAGE_PATH"

@@ -1,4 +1,0 @@
-[ 25%] Built target ddynamic_reconfigure
-[ 50%] Built target fake_dynamic_reconfigure_server
-[ 75%] Built target ddynamic_reconfigure_auto_update_test
-[100%] Built target test_bool_dynamic_reconfigure_server

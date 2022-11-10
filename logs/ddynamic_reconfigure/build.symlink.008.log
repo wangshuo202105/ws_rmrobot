@@ -1,7 +1,0 @@
-Symlinking /home/ws/ws_rmrobot/devel/lib/libddynamic_reconfigure.so
-Symlinking /home/ws/ws_rmrobot/devel/lib/ddynamic_reconfigure/test_bool_dynamic_reconfigure_server
-Symlinking /home/ws/ws_rmrobot/devel/lib/ddynamic_reconfigure/fake_dynamic_reconfigure_server
-Symlinking /home/ws/ws_rmrobot/devel/lib/ddynamic_reconfigure/ddynamic_reconfigure_auto_update_test
-Symlinking /home/ws/ws_rmrobot/devel/lib/pkgconfig/ddynamic_reconfigure.pc
-Symlinking /home/ws/ws_rmrobot/devel/share/ddynamic_reconfigure/cmake/ddynamic_reconfigureConfig.cmake
-Symlinking /home/ws/ws_rmrobot/devel/share/ddynamic_reconfigure/cmake/ddynamic_reconfigureConfig-version.cmake

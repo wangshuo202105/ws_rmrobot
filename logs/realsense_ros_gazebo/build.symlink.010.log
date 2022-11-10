@@ -1,4 +1,0 @@
-Symlinking /home/ws/ws_rmrobot/devel/lib/librealsense_gazebo_plugin.so
-Symlinking /home/ws/ws_rmrobot/devel/lib/pkgconfig/realsense_ros_gazebo.pc
-Symlinking /home/ws/ws_rmrobot/devel/share/realsense_ros_gazebo/cmake/realsense_ros_gazeboConfig.cmake
-Symlinking /home/ws/ws_rmrobot/devel/share/realsense_ros_gazebo/cmake/realsense_ros_gazeboConfig-version.cmake

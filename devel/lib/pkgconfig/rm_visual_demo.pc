@@ -1,0 +1,1 @@
+/home/ws/ws_rmrobot/devel/.private/rm_visual_demo/lib/pkgconfig/rm_visual_demo.pc

@@ -1,0 +1,1 @@
+/home/ws/ws_rmrobot/devel/.private/aruco_msgs/lib/pkgconfig/aruco_msgs.pc

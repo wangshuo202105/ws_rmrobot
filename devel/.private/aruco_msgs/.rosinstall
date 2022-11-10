@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ws/ws_rmrobot/devel/.private/aruco_msgs/setup.sh

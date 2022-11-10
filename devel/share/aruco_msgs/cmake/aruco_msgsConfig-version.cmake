@@ -1,0 +1,1 @@
+/home/ws/ws_rmrobot/devel/.private/aruco_msgs/share/aruco_msgs/cmake/aruco_msgsConfig-version.cmake

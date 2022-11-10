@@ -17,7 +17,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="14" />
+        value="140" />
       <inertia
         ixx="0.01"
         ixy="0"
@@ -57,6 +57,7 @@
     <mu2 value="200000.0"/>
     <kp value="100000000.0"/>
     <kd value="1.0"/>
+    <kinematic>1</kinematic>
   </gazebo>
   
 
@@ -119,13 +120,22 @@
       link="Link1" />
     <axis
       xyz="0 0 1" />
+
     <limit
       lower="-3.14"
       upper="3.14"
       effort="60"
       velocity="3.14" />
-	<dynamics damping="50" friction="1"/>
+
   </joint>
+
+  <gazebo reference="link1">
+    <mu1 value="200000.0"/>
+    <mu2 value="200000.0"/>
+    <kp value="100000000.0"/>
+    <kd value="1.0"/>
+    <kinematic>1</kinematic>
+  </gazebo>
 
   <!-- Link2 -->
   <link
@@ -135,7 +145,7 @@
         xyz="0.152256463426163 4.75383656106654E-07 -0.00620260383607792"
         rpy="0 0 0" />
       <mass
-        value="0.013" />
+        value="0.13" />
       <inertia
         ixx="0.00089150298478414"
         ixy="-2.23268489334765E-08"
@@ -180,11 +190,13 @@
       link="Link2" />
     <axis
       xyz="0 0 1" />
+
     <limit
       lower="-2.268"
       upper="2.268"
       effort="60"
       velocity="3.14" />
+
 	<dynamics damping="50" friction="1"/>
   </joint>
 
@@ -196,7 +208,7 @@
         xyz="5.05312670989961E-06 -0.0595925663694732 0.010569069212336"
         rpy="0 0 0" />
       <mass
-        value="0.013" />
+        value="0.13" />
       <inertia
         ixx="0.00063737100450158"
         ixy="-7.05261293649751E-08"
@@ -241,13 +253,16 @@
       link="Link3" />
     <axis
       xyz="0 0 1" />
+
     <limit
       lower="-2.355"
       upper="2.355"
       effort="30"
       velocity="3.92" />
+
 	<dynamics damping="50" friction="1"/>
   </joint>
+
 
   <!-- Link4 -->
   <link
@@ -257,7 +272,7 @@
         xyz="1.15516617405898E-06 -0.0180424468598241 -0.0215394748352687"
         rpy="0 0 0" />
       <mass
-        value="0.013" />
+        value="0.13" />
       <inertia
         ixx="0.000285938919722783"
         ixy="3.07101359163101E-09"
@@ -302,11 +317,13 @@
       link="Link4" />
     <axis
       xyz="0 0 1" />
+
     <limit
       lower="-3.14"
       upper="3.14"
       effort="10"
       velocity="3.92" />
+
 	<dynamics damping="50" friction="1"/>
   </joint>
 
@@ -318,14 +335,14 @@
         xyz="3.19794786262152E-06 -0.0593808368101458 0.00736804250989326"
         rpy="0 0 0" />
       <mass
-        value="0.013" />
+        value="0.13" />
       <inertia
-        ixx="0.01"
-        ixy="0"
-        ixz="0"
-        iyy="0.01"
-        iyz="0"
-        izz="0.01" />
+        ixx="0.000350540363914072"
+        ixy="-3.41781619975602E-08"
+        ixz="-1.77056457224373E-08"
+        iyy="0.000104927867487581"
+        iyz="-7.82431228461971E-05"
+        izz="0.000334482418423629" />
     </inertial>
     <visual>
       <origin
@@ -363,11 +380,13 @@
       link="Link5" />
     <axis
       xyz="0 0 1" />
+
     <limit
       lower="-2.233"
       upper="2.233"
       effort="10"
       velocity="3.92" />
+
 	<dynamics damping="50" friction="1"/>
   </joint>
 
@@ -379,13 +398,13 @@
         xyz="0.000714234511756999 -0.000396718732824521 -0.0126723660946126"
         rpy="0 0 0" />
       <mass
-        value="0.013" />
+        value="0.13" />
       <inertia
         ixx="0.01"
-        ixy="0"
-        ixz="0"
+        ixy="0.01"
+        ixz="0.01"
         iyy="0.01"
-        iyz="0"
+        iyz="0.01"
         izz="0.01" />
     </inertial>
     <visual>
@@ -425,23 +444,25 @@
       link="Link6" />
     <axis
       xyz="0 0 1" />
+
     <limit
       lower="-6.28"
       upper="6.28"
       effort="10"
       velocity="3.92" />
+
     <dynamics damping="50" friction="1"/>
   </joint>
 
-  <!-- plate -->
+  <!-- plate   -2.25539999752262E-10   -->
   <link
     name="plate">
     <inertial>
       <origin
         xyz="0.04582 -2.25539999752262E-10 0.004046"
-        rpy="1.5707963267949 0 0" />
+        rpy="1.5708 0 0" />
       <mass
-        value="0.013" />
+        value="0.01" />
       <inertia
         ixx="0.01"
         ixy="0"
@@ -453,7 +474,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="1.5707963267949 0 0" />
+        rpy="1.5708 0 0" />
       <geometry>
         <mesh
           filename="package://rm_65_description/meshes/plate.STL" />
@@ -467,7 +488,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5708 0 0" />
       <geometry>
         <mesh
           filename="package://rm_65_description/meshes/plate.STL" />
@@ -476,25 +497,28 @@
   </link>
 
   <joint
-    name="joint7"
+    name="joint_plate"
     type="fixed">
     <origin
       xyz="0 0 0"
-      rpy="0 0 3.1416" />
+      rpy="0 0 3.1415" />
     <parent
       link="Link6" />
     <child
       link="plate" />
-    <dynamics damping="50" friction="1"/>
   </joint>
+
+  <gazebo reference="plate">
+    <kinematic>1</kinematic>
+  </gazebo>
   
-  <!-- realsense d435 with gazebo simulation    joint8
+  <!-- realsense d435 with gazebo simulation    joint8  -->
   <xacro:include filename="$(find realsense_ros_gazebo)/xacro/depthcam.xacro"/>
 
   <xacro:realsense_d435 sensor_name="d435" parent_link="plate" rate="10">
-    <origin rpy="0 -1.5708 3.1416" xyz="0.08 0 0.0185"/>
+    <origin rpy="0 -1.5708 3.1415" xyz="0.08 0 0.0185"/>
   </xacro:realsense_d435>
-  -->
+  
   
   <!--
   <xacro:arg name="use_nominal_extrinsics" default="false"/>
@@ -524,7 +548,15 @@
     <dynamics damping="50" friction="1" />
   </joint>
 
-  <!-- Transmissions for ROS Control -->
+  <gazebo reference="gripper_base_link">
+    <mu1 value="200000.0"/>
+    <mu2 value="200000.0"/>
+    <kp value="100000000.0"/>
+    <kd value="1.0"/>
+    <kinematic>1</kinematic>
+  </gazebo>
+
+  <!--           Transmissions for ROS Control            -->
   <xacro:macro name="transmission_block" params="joint_name" >
     <transmission name="tran1">
       <type>transmission_interface/SimpleTransmission</type>
@@ -544,8 +576,6 @@
   <xacro:transmission_block joint_name="joint4"/>
   <xacro:transmission_block joint_name="joint5"/>
   <xacro:transmission_block joint_name="joint6"/>
-  <xacro:transmission_block joint_name="joint7"/>
-  <xacro:transmission_block joint_name="joint9"/>
 
   <xacro:transmission_block joint_name="gripper_Link1"/>
   <xacro:transmission_block joint_name="gripper_Link2"/>
@@ -562,5 +592,25 @@
   </gazebo>
 
   <!-- gazebo controller plugin for gripper -->
-
+  <gazebo>
+      <!-- loading plugin: mimic joints works in gazebo now -->
+      <plugin filename="libroboticsgroup_upatras_gazebo_mimic_joint_plugin.so" name="gripper_joint11_plugin">
+          <joint>gripper_Link1</joint>
+          <mimicJoint>gripper_Link11</mimicJoint>
+          <multiplier>1.0</multiplier>
+          <offset>0.0</offset>
+      </plugin>
+      <plugin filename="libroboticsgroup_upatras_gazebo_mimic_joint_plugin.so" name="gripper_joint2_plugin">
+          <joint>gripper_Link1</joint>
+          <mimicJoint>gripper_Link2</mimicJoint>
+          <multiplier>1.0</multiplier>
+          <offset>0.0</offset>
+      </plugin>
+      <plugin filename="libroboticsgroup_upatras_gazebo_mimic_joint_plugin.so" name="gripper_joint22_plugin">
+          <joint>gripper_Link1</joint>
+          <mimicJoint>gripper_Link22</mimicJoint>
+          <multiplier>1.0</multiplier>
+          <offset>0.0</offset>
+      </plugin>
+  </gazebo>
 </robot>

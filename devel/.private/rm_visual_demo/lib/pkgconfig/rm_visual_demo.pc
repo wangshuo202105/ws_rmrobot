@@ -1,0 +1,8 @@
+prefix=/home/ws/ws_rmrobot/devel/.private/rm_visual_demo
+
+Name: rm_visual_demo
+Description: Description of rm_visual_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
